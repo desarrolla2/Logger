@@ -53,7 +53,7 @@ class Logger implements LoggerInterface
     public function setOption($key, $value)
     {
         $key = $this->sanitizeOption($key);
-        if ($this->getAdapter()->isValidOption($key)) {
+        if (!$this->getAdapter()->isValidOption($key)) {
             throw new Exception\OptionNotValidException('Option not valid ' . $key);
         }
         $this->options[$key] = $value;

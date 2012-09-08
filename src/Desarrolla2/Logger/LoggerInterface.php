@@ -11,6 +11,7 @@
  */
 
 namespace Desarrolla2\Logger;
+use Desarrolla2\Logger\Adapter\AdapterInterface;
 
 /**
  * 

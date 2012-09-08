@@ -55,7 +55,7 @@ class File implements AdapterInterface
      */
     public function log($message, $logLevel)
     {
-        $line = '[' . date('Y-m-d') . '] [' . date('H:i:s') . '][' . $logLevel . ']' . $message;
+        $line = '[' . date('Y-m-d') . '] [' . date('H:i:s') . '] [' . $logLevel . '] ' . $message;
         file_put_contents($this->options['file'], $line, FILE_APPEND);
     }
 
