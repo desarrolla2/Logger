@@ -1,0 +1,24 @@
+{
+    "name": "desarrolla2/logger",
+    "description": "Provides an adapter interface to log data strings",
+    "keywords": ["log"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Daniel González",
+        "homepage": "http://desarrolla2.com/"
+    }
+    ],
+    "require": 
+    {
+        "php": ">=5.3.0"
+    },
+    "autoload": 
+    {
+        "psr-0": {
+            "Desarrolla2\\Logger\\": "src/" 
+        }
+    },
+    "minimum-stability": "dev"
+}
